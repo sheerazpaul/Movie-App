@@ -1,6 +1,6 @@
 import React from "react";
 import { Input, Button } from "@heroui/react";
-import CustomList from'./Dropdown';
+import CustomList from'./CustomList';
 import {
   orderByData,
   qualityData,
