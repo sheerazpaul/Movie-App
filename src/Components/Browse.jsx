@@ -1,6 +1,6 @@
 import React from "react";
 import { Input, Button } from "@heroui/react";
-import  DropDown  from "./DropDown";
+import  Dropdown  from "./DropDown";
 import {
   orderByData,
   qualityData,
@@ -54,7 +54,7 @@ function Browse({ searchTerm, setSearchTerm, filters, setFilters }) {
 
       <div className="flex gap-3 mt-5 flex-wrap">
         {dropdowns.map((item, index) => (
-          <DropDown
+          <Dropdown
             key={index}
             head={item.head}
             name={item.name}
