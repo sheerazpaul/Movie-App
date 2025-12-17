@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { Dropdown, DropdownTrigger, DropdownMenu, DropdownItem, Button } from "@heroui/react";
+import { DropDown, DropdownTrigger, DropdownMenu, DropdownItem, Button } from "@heroui/react";
 
 function Dropdown({ head, options, value, onChange }) {
   const [selected, setSelected] = useState(value || "All");
@@ -13,7 +13,7 @@ function Dropdown({ head, options, value, onChange }) {
   return (
     <div>
       <p className="text-white mb-3">{head} :</p>
-      <Dropdown>
+      <DropDown>
         <DropdownTrigger>
           <Button className="capitalize text-white w-24"   color="success" 
           variant="bordered">
@@ -34,7 +34,7 @@ function Dropdown({ head, options, value, onChange }) {
             </DropdownItem>
           ))}
         </DropdownMenu>
-      </Dropdown>
+      </DropDown>
     </div>
   );
 }
