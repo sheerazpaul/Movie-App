@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import { Dropdown, DropdownTrigger, DropdownMenu, DropdownItem, Button } from "@heroui/react";
 
-function DropDown({ head, options, value, onChange }) {
+function dropDown({ head, options, value, onChange }) {
   const [selected, setSelected] = useState(value || "All");
 
   const handleSelect = (key) => {
@@ -39,4 +39,4 @@ function DropDown({ head, options, value, onChange }) {
   );
 }
 
-export default DropDown;
+export default dropDown;
